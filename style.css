@@ -74,6 +74,62 @@ body {
     outline-style: none;
 }
 
-#buttons{
+#button-container{
     margin-top: 15px;
+    padding: 20px;
+    height: 50px;
+}
+
+.button{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+}
+
+#footer{
+    flex-wrap: wrap;
+    display: block;
+    font-size: 14px;
+    background: #f2f2f2;
+    line-height: 20px;
+    border-top: 1px solid #dadce0;
+    min-width: 400px;
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+}
+
+#footer > div{
+    display: inline-block;
+
+}
+
+#footer-left{
+ float: none;
+}
+
+#footer-right{
+    float: right;
+    margin-right: 30px;
+}
+
+ol{
+    list-style-type: none;
+}
+
+li:first-child{
+    padding-left: 0;
+}
+
+li{
+    padding-left: 27px;
+    display: inline;
+}
+
+li a{
+    text-decoration: none;
+    color: #70757a;
 }
