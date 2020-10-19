@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#superior-links {
+    padding: 5px;
+    text-align: right;
+    height: 30px;
+    padding: 10px;
+}
+
+#superior-links a {
+    text-decoration: none;
+    color: #000000de;
+    font-size: 13px;
+    padding-right: 10px;
+}
+
+#apps-icon {
+    color: #555;
+    vertical-align: middle;
+    display: inline-block;
+    padding-right: 20px;
+}
+
+#apps-icon:hover {
+    color:#000;
+    cursor: default;
+}
+
+#sign-in {
+    height: 30px;
+    width: 69px;
+    color: white;
+    font-weight: bold;
+    background-color: #4387fd;
+    border: 1px solid #4285f4;
+    border-radius: 2px;
+}
+
+#center{
+    margin: 90px auto 0;
+    width: max-content;
+    text-align: center;
+}
+
+#search-bar{
+    border: 1px solid #dfe1e5;
+    text-align: center;
+    border-radius: 24px;
+    margin-top: 30px;
+    height: 44px;
+    width: 582px;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+.search-icon{
+    color: grey;
+    vertical-align: bottom;
+    font-weight: lighter;
+}
+
+#search-input{
+    border: none;
+    height: 34px;
+    width: 487px;
+    display: inline;
+    padding-top: 5px;
+}
+
+#search-input:focus{
+    border: none;
+    outline-style: none;
+}
+
+#buttons{
+    margin-top: 15px;
+}
