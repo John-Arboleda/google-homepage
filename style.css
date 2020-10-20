@@ -1,5 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
 }
 
 #superior-links {
@@ -14,6 +15,11 @@ body {
     color: #000000de;
     font-size: 13px;
     padding-right: 10px;
+}
+
+#superior-links a:hover {
+    text-decoration: underline;
+    color: rgb(85, 85, 85);
 }
 
 #apps-icon {
@@ -38,44 +44,79 @@ body {
     border-radius: 2px;
 }
 
+#sign-in:hover{
+    box-shadow: 0 1px 0 rgba(0,0,0,.15);
+}
+
 #center{
-    margin: 90px auto 0;
-    width: max-content;
+    margin: 0 auto 0;
+    width: 100%;
     text-align: center;
+    max-width: 592px;
+    overflow: hidden;
+}
+
+#google-logo{
+    width: 272px;
+    height: 92px;
+    margin: 90px auto 30px;
+    transition: width 0.5s, height 0.5s, margin 0.5s;
+}
+
+@media (max-height: 536px){
+    #google-logo{
+        height: 72px;
+        width: 212px;
+        margin: 20px auto 15px;
+    }
 }
 
 #search-bar{
     border: 1px solid #dfe1e5;
     text-align: center;
     border-radius: 24px;
-    margin-top: 30px;
+    margin: 0 5px 0;
     height: 44px;
-    width: 582px;
     box-sizing: border-box;
     vertical-align: middle;
+    padding-right: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#search-bar:hover{
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+}
+
+#search-bar:focus-within{
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
 }
 
 .search-icon{
     color: grey;
-    vertical-align: bottom;
     font-weight: lighter;
+    padding-left: 15px;
+    margin: auto 0;
 }
 
 #search-input{
     border: none;
     height: 34px;
-    width: 487px;
+    width: 100%;
     display: inline;
     padding-top: 5px;
 }
+
 
 #search-input:focus{
     border: none;
     outline-style: none;
 }
 
+
 #button-container{
-    margin-top: 15px;
     padding: 20px;
     height: 50px;
 }
@@ -87,11 +128,23 @@ body {
     color: #3c4043;
     font-family: arial,sans-serif;
     font-size: 14px;
+    height: 36px;
+    min-width: 54px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+}
+
+.button:hover{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
 }
 
 #footer{
-    flex-wrap: wrap;
-    display: block;
+    display: flex;
+    flex-wrap: wrap-reverse;
     font-size: 14px;
     background: #f2f2f2;
     line-height: 20px;
@@ -99,7 +152,14 @@ body {
     min-width: 400px;
     position: absolute;
     bottom: 0;
-    width: 99%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+@media (max-width: 670px){
+    #footer{
+        justify-content: space-around;
+    }
 }
 
 #footer > div{
@@ -107,29 +167,25 @@ body {
 
 }
 
-#footer-left{
- float: none;
-}
-
-#footer-right{
-    float: right;
+#footer2{
     margin-right: 30px;
 }
 
 ol{
     list-style-type: none;
-}
-
-li:first-child{
-    padding-left: 0;
+    padding: 0;
 }
 
 li{
-    padding-left: 27px;
+    padding: 0 15px;
     display: inline;
 }
 
 li a{
     text-decoration: none;
     color: #70757a;
+}
+
+li a:hover{
+    text-decoration: underline;
 }
